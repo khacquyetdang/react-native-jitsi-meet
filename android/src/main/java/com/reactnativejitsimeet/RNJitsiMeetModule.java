@@ -57,6 +57,17 @@ public class RNJitsiMeetModule extends ReactContextBaseJavaModule {
                             .setRoom(url)
                             .setAudioOnly(false)
                             .setUserInfo(_userInfo)
+                            .setFeatureFlag("add-people.enabled", false)
+                            .setFeatureFlag("calendar.enabled", false)
+                            .setFeatureFlag("live-streaming.enabled", false)
+                            .setFeatureFlag("meeting-password.enabled", false)
+                            .setFeatureFlag("close-captions.enabled",false)
+                            .setFeatureFlag("recording.enabled", false)
+                            .setFeatureFlag("invite.enabled", false)
+                            .setFeatureFlag("video-share.enabled", false)
+                            .setFeatureFlag("meeting-name.enabled", false)
+                            .setFeatureFlag("toolbox.alwaysVisible",false)
+                            .setFeatureFlag("raise-hand.enabled", false)
                             .build();
                     mJitsiMeetViewReference.getJitsiMeetView().join(options);
                 }
@@ -97,6 +108,7 @@ public class RNJitsiMeetModule extends ReactContextBaseJavaModule {
                             .setFeatureFlag("close-captions.enabled",false)
                             .setFeatureFlag("recording.enabled", false)
                             .setFeatureFlag("invite.enabled", false)
+                            .setFeatureFlag("video-share.enabled", false)
                             .setFeatureFlag("meeting-name.enabled", false)
                             .setFeatureFlag("toolbox.alwaysVisible",false)
                             .setFeatureFlag("raise-hand.enabled", false)

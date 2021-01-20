@@ -58,7 +58,7 @@ RCT_EXPORT_METHOD(call:(NSString *)urlString userInfo:(NSDictionary *)userInfo)
             [builder setFeatureFlag:@"server-url-change.enabled" withBoolean:NO];            
             [builder setFeatureFlag:@"tile-view.enabled" withBoolean:NO];       
             [builder setFeatureFlag:@"toolbox.alwaysVisible" withBoolean:NO];
-            [builder setFeatureFlag:@"video-share.alwaysVisible" withBoolean:NO];
+            [builder setFeatureFlag:@"video-share.enabled" withBoolean:NO];
             [builder setFeatureFlag:@"ios.recording.enabled" withBoolean:NO];
         }];
         [jitsiMeetView join:options];

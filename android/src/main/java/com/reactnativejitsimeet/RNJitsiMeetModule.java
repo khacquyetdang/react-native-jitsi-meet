@@ -73,6 +73,7 @@ public class RNJitsiMeetModule extends ReactContextBaseJavaModule {
                             .setFeatureFlag("toolbox.alwaysVisible",false)
                             .setFeatureFlag("video-share.enabled", false)
                             .setFeatureFlag("recording.enabled", false)
+                            .setFeatureFlag("call-integration.enabled", false)
                             .build();
                     mJitsiMeetViewReference.getJitsiMeetView().join(options);
                 }
